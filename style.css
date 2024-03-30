@@ -5,6 +5,10 @@
     color: var(--text-main);
 }
 
+a{
+    text-decoration: none;
+}
+
 ::selection
 {
     background-color: #6750ff;
@@ -71,6 +75,9 @@ body{
 
 .navButton
 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border-radius: 10px;
     font-weight: 500;
     color: var(--text-secondary);
@@ -80,7 +87,6 @@ body{
     width: 210px;
     height: 50px;
     margin: 5px;
-
     transition: background-color 60ms;
 }
 
@@ -88,9 +94,21 @@ body{
     background-color: var(--hoverColor);
 }
 
+.navButton span
+{
+    /* border: 1px solid black; */
+    /* padding: 5px; */
+    margin-right: -4vw;
+}
+
 .navButton:active
 {
     background-color: var(--accent);
+    color: white;
+}
+
+.navButton:active .material-symbols-outlined
+{
     color: white;
 }
 
