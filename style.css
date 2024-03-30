@@ -37,6 +37,7 @@ body{
     left: 0;
     height: 100vh;
     width: 20vw;
+    /* border-right: 5px solid var(--accent); */
 }
 
 .logo
@@ -206,4 +207,26 @@ header h1
 .leadingNumberVis #info
 {
     color:var(--text-tertiary);
+}
+
+.mapContainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--accent);
+    margin-bottom: 5vh;
+}
+
+.mapInfoBar
+{
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    /* border: 1px solid black; */
+    text-align: center;
+    color:var(--text-secondary);
+    background-color: white;
+    height: 95vh;
+    font-size: 1.2em;
 }
