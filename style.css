@@ -189,6 +189,19 @@ header h1
     width: 25vw;
     height: 30vh;
     background-color: white;
+
+    transition: border 100ms;
+}
+
+.leadingNumberVis:hover
+{
+    border: 2px solid var(--accent);
+    cursor: pointer;
+}
+
+.leadingNumberVis:active
+{
+    background-color: var(--selectedColor);
 }
 
 .leadingNumberVis #statAttr
